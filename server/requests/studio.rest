@@ -1,0 +1,26 @@
+// Create new Studio
+POST http://localhost:8081/api/studio/
+Content-Type: application/json
+
+{
+    "name" : "raju",
+    "studioName" : "clickers",
+    "userName" : "raju",
+    "password" : "clickers123"
+}
+###
+
+// get all studios
+GET http://localhost:8081/api/studio/
+###
+
+//Get a Studio by id of Studio Owner
+GET http://localhost:8081/api/studio/649e3835631d3c1f717f102e
+###
+
+// Search studio by username
+GET http://localhost:8081/api/studio/find?text=ga
+###
+
+// send connection request to user by user_name of user
+POST http://localhost:8081/api/studio/connTo/649f23d168892c171f2f7afc?userName=daya_008
